@@ -3,6 +3,7 @@ import { PiPill, PiStethoscope, PiHeart, PiLightning } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { RiMenu3Line } from "react-icons/ri";
+import Scrollview from "./Scrollview";
 
 const Services = () => {
 
@@ -30,6 +31,7 @@ const Services = () => {
 
         <div className="border-t-2 border-gray-300 w-3/5 mx-auto mt-20"></div>
 
+        <Scrollview>
         <div className=" bg-white py-10 mt-10">
             <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
                 <div>
@@ -57,7 +59,9 @@ const Services = () => {
                 </div>
             </div>
         </div>
+        </Scrollview>
 
+        <Scrollview>
         <div className="bg-white py-10 mt-10">
              <h2 className="mx-auto text-4xl text-blue-700 font-semibold text-center">Our <span className="text-green-500">Services</span> </h2>
              <p className="text-center text-gray-600 mt-2">We offer healthcare services to meet all your medical needs.</p>
@@ -81,9 +85,10 @@ const Services = () => {
                     <p className="text-gray-500 mt-1">Glucose, blood pressure and other health parameter checks</p>
                </div>
             </div>
-            <p className="mx-auto text-center mt-10 p-3"><Link to='/' >Go Back</Link></p>
+            {/* <p className="mx-auto text-center mt-10 p-3"><Link to='/' >Go Back</Link></p> */}
             
         </div>
+        </Scrollview>
     </>
     )
 }

@@ -1,12 +1,19 @@
 import { FaAward, FaUsers, FaCapsules, FaClock } from "react-icons/fa";
 import { PiPill, PiStethoscope, PiHeart, PiLightning } from "react-icons/pi";
-
+import Scrollview from "./Scrollview";
 
 const ServiceHome = () => {
     return(
-      <>
+      <> 
+        
         <div className=" bg-white py-10 mt-20">
-            <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
+            <Scrollview>
+            <div 
+                className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 text-center"
+                initial={{y:30,opacity:0}}
+                animate = {{y:0,opacity:1}}
+                transition={{duration:0.8, delay:0.3}}
+            >
                 <div>
                     <FaAward className="mx-auto text-4xl text-blue-600 mb-3" />
                     <h2 className="text-3xl font-bold  text-gray-600">10+</h2>
@@ -31,8 +38,10 @@ const ServiceHome = () => {
                     <p className="text-sm text-gray-500">Customer Support</p>
                 </div>
             </div>
+            </Scrollview>
         </div>
-
+        
+        <Scrollview>
         <div className="bg-white py-10 mt-10">
              <h2 className="mx-auto text-4xl text-blue-700 font-semibold text-center">Our Services</h2>
              <p className="text-center text-gray-600 mt-2">We offer healthcare services to meet all your medical needs.</p>
@@ -57,6 +66,7 @@ const ServiceHome = () => {
                </div>
             </div>
         </div>
+        </Scrollview>
     </>
     )
 }

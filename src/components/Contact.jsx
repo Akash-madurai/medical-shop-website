@@ -32,7 +32,7 @@ const Contact = () =>{
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
                    
-                   <div className="shadow-md rounded-2xl p-6 hover:shadow-lg transition ">
+                   <div className="shadow-md rounded-2xl p-6 hover:shadow-lg transition border-2 border-b-4 border-transparent hover:border-indigo-200 hover:border-b-indigo-400 hover:bg-white duration-500">
                      <div className="flex mx-auto items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-2xl text-green-400">
                         <MdCall/>
                      </div>
@@ -40,7 +40,7 @@ const Contact = () =>{
                     <p className="mt-1 text-gray-500">9876543210</p>
                    </div>
 
-                    <div className="shadow-md rounded-2xl hover:shadow-lg transition p-6 ">
+                    <div className="shadow-md rounded-2xl hover:shadow-lg transition p-6 border-2 border-b-4 border-transparent hover:border-indigo-200 hover:border-b-4  hover:border-b-indigo-400 hover:bg-white duration-500 ">
                         <div className="flex mx-auto justify-center items-center bg-red-100 rounded-full w-12 h-12 text-red-400 text-2xl">
                             <MdLocationOn/>
                         </div>
@@ -48,7 +48,7 @@ const Contact = () =>{
                         <p className="text-gray-500 mt-1">Varathapuri Amman kovil street, <br /> Keezhkottaiyur chennai - 600127</p>
                     </div>
 
-                    <div className="shadow-md rounded-2xl hover:shadow-lg transition p-6 ">
+                    <div className="shadow-md rounded-2xl hover:shadow-lg transition p-6 border-2 border-b-4 border-transparent hover:border-indigo-200 hover:border-b-indigo-400 duration-500 hover:bg-white ">
                         <div className="flex mx-auto items-center justify-center bg-purple-200 w-12 h-12 rounded-full text-purple-500 text-xl">
                             <MdEmail/>
                         </div>
